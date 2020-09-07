@@ -1,21 +1,12 @@
 <template>
 	<div id="app">
-		<h1>hello</h1>
-		<loading></loading>
-		<showtoast></showtoast>
-		<toptips></toptips>
+    <router-view></router-view>
 	</div>
 </template>
 
 <script>
-	import beva from "./packages/beva.js"
 	export default {
-		name: 'App',
-		components:{
-			"loading":beva.loading,
-			"showtoast":beva.showtoast,
-			"toptips":beva.toptips
-		}
+		name: 'App'
 	}
 </script>
 
